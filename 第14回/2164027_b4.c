@@ -24,7 +24,7 @@ int main() {
      */
 
     for (int i = 0; i < dSize; ++i) {
-        fscanf(fp, "%s %d", &data[i].name, &data[i].score);
+        fscanf(fp, "%s %d", data[i].name, &data[i].score);
         //print each data in an appropriate format
         printf("No.%d\n", i + 1);
         printf("  名前；%s\n", data[i].name);
