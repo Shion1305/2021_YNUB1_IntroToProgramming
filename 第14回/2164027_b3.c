@@ -16,7 +16,7 @@ int main() {
         printf("No.%d\n", i + 1);
         printf("  名前:");
         //acquire name data
-        scanf("%s", &name);
+        scanf("%s", name);
         printf("  点数:");
         //acquire score data
         scanf("%d", &score);
