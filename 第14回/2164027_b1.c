@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/**
+ * @param args number of arguments
+ * @param fileN content of arguments
+ * an example of arguments are as following
+ * ../data1.txt ../data2.txt
+ */
 int main(int args, char *fileN[]) {
     //temporary stores a character read from source
     char tmp;
@@ -25,6 +32,7 @@ int main(int args, char *fileN[]) {
             printf("%c", tmp);
         }
         fclose(fp);
+        if (!b)printf("%c", '\n');
     }
     return 0;
 }
