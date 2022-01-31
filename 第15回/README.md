@@ -55,12 +55,12 @@ classDef End fill:#d94e5a,stroke:#fa9891,color:white,stroke-width:4px
 graph TD
     subgraph Ex.8.4
     A1([開始]):::Start ==>B1[i=1と変数を定義する]
-    B1:::Operation ==> C1[&quot&#x300cひつじがi匹&#x300d&quotに変数を代入し出力する]:::Operation
+    B1:::Operation ==> C1[/&quot&#x300cひつじがi匹&#x300d&quotに変数を代入し出力する/]:::Operation
     C1 ==> C2{i:100}:::Switch
     C2 ==>| = |E1
     C2 ==>| < |D1
     D1[iを1増やす]:::Operation ==>C1
-    E1[&quot&#x300cZzz...&#x300d&quotと出力する]:::Operation ==> G1([終了]):::End
+    E1[/&quot&#x300cZzz...&#x300d&quotと出力する/]:::Operation ==> G1([終了]):::End
 	end
 classDef Start fill:#f0553a,color:white
 classDef Operation fill:#1a283d,stroke:#57708d,color:white,stroke-width:4px
@@ -74,12 +74,12 @@ classDef End fill:#d94e5a,stroke:#fa9891,color:white,stroke-width:4px
 graph TD
     subgraph Ex.8.5
     A1([開始]):::Start ==>B1[i=5と変数を定義する]
-    B1:::Operation ==> C1[&quot&#x300ci&#x300d&quotに変数を代入し出力する]:::Operation
+    B1:::Operation ==> C1[/&quot&#x300ci&#x300d&quotに変数を代入し出力する/]:::Operation
     C1 ==> C2{i:0}:::Switch
     C2 ==>| = |E1
     C2 ==>| > |D1
     D1[iを1減らす]:::Operation ==>C1
-    E1[&quot&#x300c発射&#xff01&#x300d&quotと出力する]:::Operation ==> G1([終了]):::End
+    E1[/&quot&#x300c発射&#xff01&#x300d&quotと出力する/]:::Operation ==> G1([終了]):::End
 	end
 classDef Start fill:#f0553a,color:white
 classDef Operation fill:#1a283d,stroke:#57708d,color:white,stroke-width:4px
@@ -95,7 +95,7 @@ graph TD
     subgraph Ex.8.6
     A1([開始]):::Start ==>B1[変数i=1,i1=10を定義する]:::Operation
     B1==> C1[/階乗処理ループを10回繰り返す\]:::Operation
-    C1 ==> C2[変数iにへんすi1をかける]:::Operation
+    C1 ==> C2[変数iに変数i1をかける]:::Operation
     C2 ==>D1[iを1減らす]:::Operation==>E1
     E1[\階乗処理ループ/]:::Operation ==> G1([終了]):::End
 	end
